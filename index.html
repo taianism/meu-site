@@ -5,6 +5,7 @@
         <title>Quiz para Programadores</title>
         <meta name="desctiption" content="Um Quiz interativo para 
         testa seus conhecimentos">
+        <link rel="stylesheet" href="Style.css">
     </head>
     <body>
         <header>
@@ -113,12 +114,102 @@
             </section>
             <!--Pergunta 8: Imagem-->
             <section>
-                <h2>Pergunta 8: Qual Linguagem de Programação é
-                    representada pelo logotipo abaixo?</h2>
-                    <img src="" alt=''>
+                <h2>Pergunta 8: Qual Linguagem de Programação é representada pelo logotipo descrito abaixo?</h2>
+
+            <p>
+                Esta linguagem é amplamente utilizada para automação, ciência de dados e inteligência artificial. 
+                Seu logotipo geralmente apresenta duas serpentes entrelaçadas.
+            </p>
+
+            <form>
+            <label for="resposta">Escolha a linguagem:</label>
+            <select id="resposta" name="linguagem">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="javascript">JavaScript</option>
+            <option value="csharp">C#</option>
+            </select>
+            <br><br>
+            <button type="submit">Enviar Resposta</button>
+            </form>
             </section>
-        </main>
-        <footer></footer>
+            <!--Tabela de Pontuação-->
+            <section>
+                <h2>Tabela de Pontuação</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Pontuação</th>
+                            <th>Avaliação</th>
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                 <tr>
+                        <td>0-2</td>
+                        <td>Não desista! Cada tentativa é
+                    uma oportunidade de você aprender</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Você ainda precisa melhorar. Que tal
+                            estudar mais sobre programação</td>
+                    </tr>
+                    <tr>
+                        <td>5-7</td>
+                        <td>Bom! Seu conhecimento em programação está satisfatório</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Perfeito! Você está muito bem informado sobre Programação</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"> Boa sorte na Próxima! Estude mais para melhorar</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <!--Lista de Respostas-->
+            <section>
+               <h2>Verifique suas Respostas</h2>
+               <details>
+                <summary>Clique aqui para ver as Respostas do 
+                    Quiz</summary>
+               <ol>
+                <li>HTML</li>
+                <li>Domínio</li>
+                <li>Abb23!kao8Anmd#</li>
+                <li>1991</li>
+                <li>Javascrip, Java</li>
+                <li> Arquivo deve tter extensão .html</li>
+                <li>type</li>
+                <li>Java</li>
+               </ol>
+            </details>
+            </section>
+            <!--Formulário de Feedback-->
+            <section>  
+                <h2>Nos dê p seu feedback</h2>
+                <form>
+                    <fieldset>
+                        <legend>Informações de Contato</legend>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name"><br
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="Comentarios">Comentários</label><br>
+                    <textarea id="Comentarios" name="Comentarios" rows="4" cols="50" placeholder="Digite seus Comentarios aqui"></textarea><br>
+                    <button onclick="alert('FEEDBACK ENVIADO')">Envie seu Feedback</button>
+                </fieldset>
+                </form>
+            </section>
+         </main>
+        <footer>
+            <p class="paragrafo-footer">&copy Quiz de Programadores. Todos os direitos reservados</p>
+            <p class="paragrafo-footer"> Para conhecer outros Quizzes <a href="https://google.com" target="_blank"> Clique aqui </a></p>
+        </footer>
     </body>
 </html> 
 
